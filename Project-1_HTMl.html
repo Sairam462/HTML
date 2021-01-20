@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_Form</title>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <form>
+        <table border="3">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male" required>Male<br>
+                    <input type="radio" name="gender" value="Female" required>Female
+                    </td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="number" name="mobile" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea required></textarea></td>
+            </tr>
+        </table>
+        <h2>Payment Details</h2>
+        <table border="2">
+            <form>
+                <tr>
+                    <td>Card Type</td>
+                    <td><select required>
+                        <option value="#">---Select Card Type---</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="MasterCard">MasterCard</option> 
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Card Number</td>
+                    <td><input type="number" name="card_number" required></td>
+                </tr>
+                <tr>
+                    <td>Expiry Date</td>
+                    <td><input type="month" name="exp_date" required></td>
+                </tr>
+                <tr>
+                    <td>CVV</td>
+                    <td><input type="password" name="cvv" required></td>
+                </tr>
+                <tr aria-rowspan>
+                    <td><input type="submit" value="Submit"></td><td><input type="reset" value="Reset"></td>
+                </tr>
+            </form>
+        </table>
+    </form>
+</body>
+</html>
